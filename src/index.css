@@ -1,3 +1,11 @@
+.cursor-pointer:hover {
+  /*background-color: #f7fafc;*/
+}
+
+/* Ocultar el contenido del panel por defecto */
+.hidden {
+  display: none;
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

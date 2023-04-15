@@ -1,32 +1,13 @@
 export interface Cuestionario {
   genero: Genero;
   yearNacimiento: number;
-  pais: string;
   localidad: string;
   estadoCivil: EstadoCivil;
   nivelEstudios: NivelEstudios;
   convivis: boolean;
-  cuantasPersonasConviven?: number;
-  cuantasPersonasDiscapacidad?: number;
-  personaACargo: boolean;
-  cuantasPersonasACargo?: number;
+  cuantasPersonasConviven?: string;
   tieneTrabajo: boolean;
-  cuantasHorasTrabaja?: number;
-  recibeAyudaEstado: boolean;
-  queTipoAyuda?: AyudaEstado;
-  ordenarLimpiar?: number;
-  lavarPlanchar?: number;
-  cuidarMascotaPlanta?: number;
-  amamantar?: number;
-  ayudaTareaEscolar?: number;
-  hacerComprasTramites?: number;
-  cuidarNiniaAdolecente?: number;
-  cuidarAdultoMayor?: number;
-  cuidarPersonaDiscapacidad?: number;
-  cuidarFamiliarEnfermo?: number;
-  prepararComida?: number;
-  reparacionesHogar?: number;
-  otrasTareasCuidado?: number;
+  cuantasHorasTrabaja: number;
 }
 
 export enum Genero {
@@ -45,6 +26,7 @@ export enum EstadoCivil {
   Soltera = "Soltera/o",
   UnionCivilConviviente = "Unión civil o conviviente",
   Viuda = "Viuda/o",
+  ninguno = "",
 }
 
 export enum NivelEstudios {
