@@ -15,11 +15,11 @@ function App() {
       {porcentaje > 0 && porcentaje < 100 && (
         <Progress porcentaje={porcentaje} />
       )}
-      <BrowserRouter>
+      <BrowserRouter basename="/calculadora">
         <Routes>
           <Route path="/" element={<Home setPorcentaje={setPorcentaje} />} />
           <Route
-            path="/calculadora"
+            path="/cuestionario"
             element={
               <Calculadora
                 setPorcentaje={setPorcentaje}
