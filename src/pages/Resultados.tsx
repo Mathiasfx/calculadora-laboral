@@ -87,8 +87,8 @@ const Resultados = () => {
           e insertarse en trabajos remunerados y de calidad.
         </p>
       </div>
-      <div>
-        <div className="w-1/2 bg-amber-500 text-white mt-5 rounded-full h-4/5 px-6 py-6 ">
+      <div className="flex m-2">
+        <div className="w-1/2 bg-amber-500 text-white mt-5 mr-5 rounded-full h-4/5 px-6 py-6 ">
           <h1 className="font-bold text-5xl">192</h1>
           <h4 className="font-bold text-3xl">horas por mes</h4>
           <p className="py-2 px-2">
@@ -98,7 +98,9 @@ const Resultados = () => {
             tiempo que dedican los varones.
           </p>
         </div>
-        <div className="w-1/2"></div>
+        <div className="w-1/2">
+          <Grafico mipromedio={total} />
+        </div>
       </div>
       <div className="bg-pink-700 text-white rounded-3xl  px-10 py-10 mt-5 text-start">
         <p>
